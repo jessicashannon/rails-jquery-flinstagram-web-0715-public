@@ -4,7 +4,7 @@
     <!-- SHOW ALL OF THE PICTURES -->
     <% @pictures.each do |picture| %>
       <!-- INDIVIDUAL IMAGE -->
-      <div class="image-wrapper">
+      <div class="image-wrapper" id="picture-<%= picture.id %>">
 
         <div class="insta-img">
           <%= image_tag("#{picture.url}", width: "500") %>

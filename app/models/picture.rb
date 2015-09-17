@@ -25,8 +25,8 @@ class Picture < ActiveRecord::Base
   private
 
       def user_liked?(user)
-        self.likes.any? do |like| 
-          like.user_id == user.id 
+        self.likes.any? do |like|
+          like.user_id == user.id
         end
       end
 

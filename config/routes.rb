@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   root 'pictures#index'
   post '/picture/:id/like' => 'pictures#like', as: :like
 
+# if it's javascript render picture
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

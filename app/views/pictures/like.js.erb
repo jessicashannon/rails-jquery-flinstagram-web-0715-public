@@ -1,8 +1,1 @@
-alert("We're in the like.js.erb!")
-
-$('.likes-message').html("sample text, is this working??")
-
-
-
-// <strong>#{self.likes.count} people</strong> like this image".html_safe
-// "<strong>You</strong> and <strong>#{self.likes.count - 1} other people</strong> like this image".html_safe
+$("#picture-<%= @picture.id %>").html("<%= j render @picture %>")
